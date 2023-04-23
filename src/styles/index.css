@@ -1,0 +1,49 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 8ch minmax(12ch, 1fr);
+  gap: 1em 0.5em;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 320px;
+  padding: 2em;
+  border: thin solid;
+  margin: 2rem auto;
+}
+
+form > h1 {
+  grid-column: 1 / -1;
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+form > label {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: right;
+}
+
+form > input,
+form > select {
+  padding: 0.25em;
+  margin: 0;
+  font-size: 1em;
+}
+
+form > output {
+  padding: 0;
+  margin: 0;
+}
